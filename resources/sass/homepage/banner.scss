@@ -1,0 +1,101 @@
+.banner{
+    background-image: url('/images/Hapo_Learn_banner\ 1.png');
+    min-height: 655px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    position: relative;
+}
+
+.banner-container{
+    position: absolute;
+    left: 26px;
+    top: 188px;
+    font-family:'UTM BryantLG';
+}
+
+.banner-title-content{
+      font-size: 47px;
+      font-weight: 400;
+      color: rgba(17, 17, 78, 1);
+      margin: 0;
+      line-height: 55px;
+      
+}
+
+.banner-title-content-b{
+    font-weight: 700;
+}
+
+.banner-text {
+    font-size: 20px;
+    color: #505353;
+    font-weight: 400;
+}
+
+.btn-start{
+    padding: 15px 50px;
+    font-weight: 700;
+    border-radius: 45px;
+    color: #fff;
+    background-color: rgba(178, 210, 53, 1);
+    border: 0;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);;
+}
+//tablet
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    
+    .banner {
+        width: 100%;
+        background-size: contain, cover;
+    }
+    
+    .banner-container {
+        width: 100vw;
+        height: 350px;
+        top: 60px;
+        left: 27px;
+    }
+    
+    .banner-title-content {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    
+    .banner-title-content svg {
+        width: 39px;
+        height: 37px;
+    }
+    
+    .btn-start{
+        font-size: 16px;
+        padding: 13px 28px;
+    }
+}
+//mobile
+@media (max-width: 736px){
+    .banner {
+        width: 100%;
+        background-size: contain, cover;
+    }
+
+    .banner-container {
+        top: 225px;
+        padding-left: 55px;
+    }
+
+    .banner-title {
+        left: 50%;
+    }
+
+    .banner-title-content {
+        font-size: 25px;
+        top: 30px;
+    }
+    
+    .banner-title-content svg {
+        width: 31px;
+        height: 26px;
+    }
+
+}

@@ -12,7 +12,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ">
                     <a class="nav-link" href="#">ALL COUSER</a>
                 </li>
                 </li>
