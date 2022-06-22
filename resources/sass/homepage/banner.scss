@@ -1,4 +1,4 @@
-.banner{
+.banner {
     background-image: url('/images/Hapo_Learn_banner\ 1.png');
     min-height: 655px;
     background-repeat: no-repeat;
@@ -20,7 +20,6 @@
       color: rgba(17, 17, 78, 1);
       margin: 0;
       line-height: 55px;
-      
 }
 
 .banner-title-content-b{
@@ -47,8 +46,6 @@
 .layout {
     height: 150px;
     background-color: #e5e5e5;
-    
-
 }
 //tablet
 @media only screen and (min-width: 768px) and (max-width: 1024px){
@@ -81,7 +78,7 @@
     }
 }
 //mobile
-@media (max-width: 736px){
+@media (max-width: 736px) {
     .banner {
         width: 100%;
         background-size: contain, cover;

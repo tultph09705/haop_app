@@ -111,4 +111,5 @@
 </section>
 <h2><a href="">View All Our Courses <i class="fas fa-arrow-right"></i></a></h2>
 
+<section class="background-our-courses"></section>
 @endsection
