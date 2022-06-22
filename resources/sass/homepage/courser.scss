@@ -11,12 +11,14 @@ $main-color :rgba(178, 210, 53, 1);
     padding-bottom: 50px;
     box-shadow: 0px 0px 10px
     rgba(0, 0, 0, 0.25);
+    
 }
 
 .img-courser {
     padding: 35px;
     background-color: #3F6185;
     border-radius: 30px;
+    
 }
 
  .color {
@@ -59,6 +61,7 @@ h1 {
     text-align: center;
     font-weight: 700;
     font-size: 80px;
+    
 }
 
 .Other-Courser {
@@ -75,11 +78,12 @@ h1 {
 
 .line{
     height: 7px;
-    width: 540px;
+    width: 45%;
     background-color: $main-color;
-    text-align: center;
+    
     border-radius: 50px;
-    margin-left: 364px;
+    margin: 0 auto;
+   
 }
 
 h2 {
@@ -95,4 +99,8 @@ h2 a {
 h2 a:hover {
     text-decoration: none;
     color: #3F6185;
+}
+
+@media screen {
+    
 }
