@@ -1,5 +1,4 @@
 
-
 .navbar-nav {
   padding-left: 335px;
 }
@@ -18,12 +17,26 @@
   color: #fff !important;
 }
 
-.example {
-  display: flex;
-  align-items: center;
-  min-height: 54vh;
-}
+@media (max-width: 1024px){
+  .navbar-nav {
+    display: initial;
+  }
 
-@media (max-width: 992px) {
-	// TODO
+  .logo-image {
+    width: 224px;
+    height: 50px;
+  }
+}
+//mobile
+@media (max-width: 736px){
+  .navbar-nav {
+    display: initial;
+  }
+  .navbar-toggler {
+    display: flex;
+  }
+  .logo-image {
+    width: 150px;
+    height: 26.75px;
+  }
 }
