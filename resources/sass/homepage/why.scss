@@ -1,0 +1,45 @@
+.why-hapo {
+    background-size: cover;
+    background-image: url('/images/Rectangle_17.png');
+    display: flex;
+    margin: 75px 0px 75px 0px;
+    background-repeat: repeat;
+    box-sizing: border-box;
+}
+
+.tittle-why {
+    font-family: UTM BryantLG;
+    font-size: 60px;
+    color: #FFFF;
+    font-weight: 700;
+    text-align: center;
+    line-height: 80px;
+}
+
+.text-why {
+    color: #FFFF;
+    text-align: center;
+    font-family: UTM BryantLG;
+    font-size: 20px;
+}
+
+.info-hapo {
+    transform: translateY(85px);
+}
+
+.img-hapo {
+    width: 115%;
+}
+
+@media (max-width: 768px){
+    .img-hapo {
+        width: 122%;
+        margin-top: 83px;
+    }
+    .tittle-why {
+        font-size: 41px;
+    }
+    .text-why {
+        font-size: 12px;
+    }
+}

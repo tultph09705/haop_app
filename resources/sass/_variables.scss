@@ -6,6 +6,14 @@ body {
   margin: 0;
 }
 
+@font-face {
+  font-family: UTM BryantLG;
+  src: url("/fonts/UTM_BryantLG_B.ttf");
+  src: url("/fonts/UTM_BryantLG.ttf");
+  src: url("/fonts/utm_bryantlg-webfont.woff");
+  src: url("/fonts/utm_bryantlg-webfont.woff2");
+}
+
 // Typography
 $font-family-sans-serif: 'Nunito', sans-serif;
 $font-size-base: 0.9rem;
