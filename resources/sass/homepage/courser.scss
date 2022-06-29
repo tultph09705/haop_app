@@ -1,24 +1,23 @@
 $main-color :rgba(178, 210, 53, 1);
+$main-font : UTM BryantLG;
 
 .row {
     transform: translateY(-25%) !important;
 }
 
 .info {
-    border: 1px solid #cccc;
-    border-radius: 30px;
-    text-align: center;
-    padding-bottom: 50px;
-    box-shadow: 0px 0px 10px
+  border: 1px solid #cccc;
+  border-radius: 30px;
+  text-align: center;
+  padding-bottom: 50px;
+  box-shadow: 0px 0px 10px
     rgba(0, 0, 0, 0.25);
-    
 }
 
 .img-courser {
-    padding: 35px;
-    background-color: #3F6185;
-    border-radius: 30px;
-    
+  padding: 35px;
+  background-color: #3F6185;
+  border-radius: 30px;
 }
 
  .color {
@@ -26,72 +25,72 @@ $main-color :rgba(178, 210, 53, 1);
 }
 
 .courser-title {
-    text-align: center;
-    font-weight: 700;
-    font-size: 25px;
-    font-family: UTM BryantLG;
+  text-align: center;
+  font-weight: 700;
+  font-size: 25px;
+  font-family: $main-font;
 }
 
 .courser-title a {
-    color: $main-color;
+  color: $main-color;
 }
 
 .courser-title a:hover {
-    text-decoration: none;
-    color: #3F6185;
+  text-decoration: none;
+  color: #3F6185;
 }
 .courser-text {
-    text-align: center;
-    font-size: 14px;
-    width: 80%;
-    margin: 0 auto;
-    padding-bottom: 20px;
-    font-family: UTM BryantLG;
+  text-align: center;
+  font-size: 14px;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  font-family: $main-font;
 }
 
 .btn-courser {
-    border-radius: 45px;
-    color: #fff;
-    background-color: rgba(178, 210, 53, 1);
-    border: 0;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);;
-    padding: 11px 35px;
-    font-weight: 700;
-    font-family: UTM BryantLG;
+  border-radius: 45px;
+  color: #fff;
+  background-color: rgba(178, 210, 53, 1);
+  border: 0;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);;
+  padding: 11px 35px;
+  font-weight: 700;
+  font-family: $main-font;
 }
 
 h1 {
-    text-align: center;
-    font-weight: 700;
-    font-size: 90px;
-    font-family: UTM BryantLG;
+  text-align: center;
+  font-weight: 700;
+  font-size: 90px;
+  font-family: $main-font;
 }
 
 .Other-Courser {
-    padding-top: 275px;
+  padding-top: 275px;
 }
 
 .blue {
-    background-color: rgba(36, 171, 226, 1);
+  background-color: rgba(36, 171, 226, 1);
 }
 
 .dark-blue {
-    background-color: rgba(27, 117, 187, 1);
+  background-color: rgba(27, 117, 187, 1);
 }
 
 .line{
-    height: 7px;
-    width: 45%;
-    background-color: $main-color;
-    border-radius: 50px;
-    margin: 0 auto;
+  height: 7px;
+  width: 45%;
+  background-color: $main-color;
+  border-radius: 50px;
+  margin: 0 auto;
 }
 
 h2 {
-    text-align: center;
-    font-weight: 700;
-    font-size: 40px;
-    font-family: UTM BryantLG;
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  font-family: $main-font;
 }
 
 h2 a {
@@ -99,17 +98,16 @@ h2 a {
 }
 
 h2 a:hover {
-    text-decoration: none;
-    color: #3F6185;
-    
+  text-decoration: none;
+  color: #3F6185;
 }
 
 @media (min-width: 375px) and (max-width: 768px){
     .layout {
-        margin-top: -275px;
+      margin-top: -275px;
     }
 
     .Courser {
-        padding-top: 106px;
+      padding-top: 106px;
     }
 }
