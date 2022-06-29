@@ -47,7 +47,7 @@
     height: 150px;
     background-color: #e5e5e5;
 }
-//tablet
+
 @media only screen and (min-width: 768px) and (max-width: 1024px){
     
     .banner {
@@ -77,7 +77,7 @@
         padding: 13px 28px;
     }
 }
-//mobile
+
 @media (max-width: 736px) {
     .banner {
         width: 100%;
