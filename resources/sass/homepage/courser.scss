@@ -2,7 +2,7 @@ $main-color :rgba(178, 210, 53, 1);
 $main-font : UTM BryantLG;
 
 .row {
-    transform: translateY(-25%) !important;
+  transform: translateY(-25%) !important;
 }
 
 .info {
@@ -20,8 +20,8 @@ $main-font : UTM BryantLG;
   border-radius: 30px;
 }
 
- .color {
-    background-color: rgba(220, 89, 76, 1);
+.color {
+  background-color: rgba(220, 89, 76, 1);
 }
 
 .courser-title {
@@ -78,7 +78,7 @@ h1 {
   background-color: rgba(27, 117, 187, 1);
 }
 
-.line{
+.line {
   height: 7px;
   width: 45%;
   background-color: $main-color;
@@ -94,7 +94,7 @@ h2 {
 }
 
 h2 a {
-    color: $main-color;
+  color: $main-color;
 }
 
 h2 a:hover {
