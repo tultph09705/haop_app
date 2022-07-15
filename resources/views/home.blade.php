@@ -56,19 +56,27 @@
             <div class="img-courser">
                 <img src="{{ asset('images/Rectangle 7.png') }}" alt="" >
             </div>
-            <p class="courser-title"><a href="">HTML/CSS/JS Tutorial</a></p>
-            <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
-            <button class="btn-courser">Take This Course</button>
+            <div class="info-couser-text">
+                <p class="courser-title"><a href="">HTML/CSS/JS Tutorial</a></p>
+                <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                <button class="btn-courser">Take This Course</button>
+            </div>
+            
+            
         </div>
     </div>
     <div class="col-md items">
         <div class="info">
             <div class="img-courser color">
-                <img src="{{ asset('images/laravel-1-logo-black-and-white 1.png') }}" alt="" >
+                <img src="{{ asset('images/laravel-1-logo-black-and-white.png') }}" alt="" >
             </div>
-            <p class="courser-title"><a href="">LARAVEL Tutorial</a></p>
-            <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
-            <button class="btn-courser">Take This Course</button>
+            <div class="info-couser-text">
+                <p class="courser-title"><a href="">LARAVEL Tutorial</a></p>
+                <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                <button class="btn-courser">Take This Course</button>
+            </div>
+            
+            
         </div>
     </div>
     <div class="col-md items">
@@ -76,9 +84,13 @@
             <div class="img-courser">
                 <img src="{{ asset('images/Rectangle 15.png') }}" alt="">
             </div>
-            <p class="courser-title"><a href="">PHP Tutorial</a></p>
-            <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
-            <button class="btn-courser">Take This Course</button>
+            <div class="info-couser-text">
+                <p class="courser-title"><a href="">PHP Tutorial</a></p>
+                <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                <button class="btn-courser">Take This Course</button>
+            </div>
+            
+            
         </div>
   </div>
     </div>
@@ -93,19 +105,27 @@
             <div class="img-courser blue">
                 <img src="{{ asset('images/Rectangle 7.png') }}" alt="" >
             </div>
-            <p class="courser-title"><a href="">CSS Tutorial</a></p>
-            <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
-            <button class="btn-courser">Take This Course</button>
+            <div class="info-couser-text">
+                <p class="courser-title"><a href="">CSS Tutorial</a></p>
+                <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
+                <button class="btn-courser">Take This Course</button>
+            </div>
+            
+            
         </div>
     </div>
     <div class="col-md items">
     <div class="info">
             <div class="img-courser color">
-                <img src="{{ asset('images/laravel-1-logo-black-and-white 1.png') }}" alt="" >
+                <img src="{{ asset('images/laravel-1-logo-black-and-white.png') }}" alt="" >
             </div>
-            <p class="courser-title"><a href="">Ruby on rails Tutorial</a></p>
-            <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
-            <button class="btn-courser">Take This Course</button>
+            <div class="info-couser-text">
+                <p class="courser-title"><a href="">Ruby on rails Tutorial</a></p>
+                <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
+                <button class="btn-courser">Take This Course</button>
+            </div>
+            
+            
     </div>
     </div>
     <div class="col-md items">
@@ -113,9 +133,13 @@
         <div class="img-courser dark-blue">
                 <img src="{{ asset('images/Rectangle 15.png') }}" alt="">
         </div>
-        <p class="courser-title"><a href="">Java Tutorial</a></p>
-        <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
-        <button class="btn-courser">Take This Course</button>
+        <div class="info-couser-text">
+                <p class="courser-title"><a href="">Java Tutorial</a></p>
+                <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
+                <button class="btn-courser">Take This Course</button>       
+            </div>
+        
+        
     </div>
   </div>
     </div>

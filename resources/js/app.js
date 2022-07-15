@@ -5,7 +5,7 @@
  */
 
 require('./bootstrap');
-
+// require("slick-carousel");
 
 window.Vue = require('vue').default;
 
@@ -17,7 +17,7 @@ window.Vue = require('vue').default;
  * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
  */
  
-require('./components/slider');
+// require('./components/slider');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
@@ -29,6 +29,24 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+//  $(document).ready(function() {
+//     $(".feedback-slide").slick({
+//       slidesToShow: 4,
+//       slidesToScroll: 2,
+//       autoplay: true,
+//       autoplaySpeed: 2000,
+
+//     //   infinite: true,
+//     //   arrows: true,
+//       prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fas fa-chevron-left' aria-hidden='true'></i></button>",
+//       nextArrow:"<button type='button' class='slick-next pull-right'><i class='fas fa-chevron-right' aria-hidden='true'></i></button>"
+//     });
+//   });
+
+
 const app = new Vue({
     el: '#app',
 });
+
+
+

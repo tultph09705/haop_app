@@ -1,5 +1,4 @@
-$main-color :rgba(178, 210, 53, 1);
-$main-font : UTM BryantLG;
+
 
 .row {
   transform: translateY(-25%) !important;
@@ -102,12 +101,33 @@ h2 a:hover {
   color: #3F6185;
 }
 
-@media (min-width: 375px) and (max-width: 768px){
+@media only screen and (max-width: 768px){
     .layout {
       margin-top: -275px;
     }
 
     .Courser {
       padding-top: 106px;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding-bottom: 165px;
+    }
+
+    .info {
+      display: flex;
+      padding-bottom: 0px;
+      background-color: #fff;
+    }
+    .courser-title {
+      text-align: left;
+    }
+    .courser-text {
+      width: 100%;
+      text-align: left;
+      
     }
 }
