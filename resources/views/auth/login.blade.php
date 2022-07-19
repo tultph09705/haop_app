@@ -1,18 +1,18 @@
-@extends('layouts.app')
+  @extends('layouts.app')
 
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+                <div class="card-header">{{ __('Sign in to HapoLearn') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Username') }}</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
@@ -63,6 +63,34 @@
                                     </a>
                                 @endif
                             </div>
+                        </div>
+                        <div class="form-group row justify-content-center">
+                            <div class="col-md-10 sign-with">
+                                <p class="title-google">Sign in with</p>
+                            </div>
+                        </div>
+
+                        <div class="form-group row justify-content-center mt-4 mb-4">
+                            <div class="col-md-10">
+                                <button class="account-google">
+                                    <a href="#">
+                                        <i class="fab fa-google-plus-g"></i>
+                                        Google
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="form-group row justify-content-center">
+                            <div class="col-md-10 sign-with model-register">
+                                <p class="title-google title-register">or New to HapoLearn</p>
+                            </div>
+                        </div>
+
+                        <div class="from-group row mt-5 justify-content-center">
+                            <button type="submit" class="btn btn-register">
+                                {{ __('Create New Account') }}
+                            </button>
                         </div>
                     </form>
                 </div>
