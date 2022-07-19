@@ -1,13 +1,16 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
-    "/images/Hapo_Learn_banner 1.png": "/images/Hapo_Learn_banner 1.png",
+    "/images/Ellipse 1.png": "/images/Ellipse 1.png",
+    "/images/Hapo_Learn_banner.png": "/images/Hapo_Learn_banner.png",
+    "/images/laravel-1-logo-black-and-white.png": "/images/laravel-1-logo-black-and-white.png",
     "/images/logo.png": "/images/logo.png",
+    "/images/Rectangle_15.png": "/images/Rectangle_15.png",
+    "/images/Rectangle_17.png": "/images/Rectangle_17.png",
+    "/images/Rectangle_7.png": "/images/Rectangle_7.png",
+    "/images/transparent-1911160_1280.png": "/images/transparent-1911160_1280.png",
     "/fonts/utm_bryantlg-webfont.woff": "/fonts/utm_bryantlg-webfont.woff",
     "/fonts/utm_bryantlg-webfont.woff2": "/fonts/utm_bryantlg-webfont.woff2",
     "/fonts/UTM_BryantLG.ttf": "/fonts/UTM_BryantLG.ttf",
-    "/fonts/UTM_BryantLG_B.ttf": "/fonts/UTM_BryantLG_B.ttf",
-    "/images/laravel-1-logo-black-and-white 1.png": "/images/laravel-1-logo-black-and-white 1.png",
-    "/images/Rectangle 15.png": "/images/Rectangle 15.png",
-    "/images/Rectangle 7.png": "/images/Rectangle 7.png"
+    "/fonts/UTM_BryantLG_B.ttf": "/fonts/UTM_BryantLG_B.ttf"
 }

@@ -88,7 +88,7 @@
     </section>
 
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-        © 2021 Copyright:
-        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    © 2020 HapoLearn, 
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Inc. All rights reserved.</a>
     </div>
 </footer>

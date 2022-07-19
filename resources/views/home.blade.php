@@ -1,7 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
-
+<script
+  type="text/javascript"
+  src="https://code.jquery.com/jquery-1.11.0.min.js"
+></script>
+<script
+  type="text/javascript"
+  src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+></script>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+></script>
 <section class="banner" >
 <div class="banner-container">
         <div class="banner-title">
@@ -45,19 +56,27 @@
             <div class="img-courser">
                 <img src="{{ asset('images/Rectangle 7.png') }}" alt="" >
             </div>
-            <p class="courser-title"><a href="">HTML/CSS/JS Tutorial</a></p>
-            <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
-            <button class="btn-courser">Take This Course</button>
+            <div class="info-couser-text">
+                <p class="courser-title"><a href="">HTML/CSS/JS Tutorial</a></p>
+                <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                <button class="btn-courser">Take This Course</button>
+            </div>
+            
+            
         </div>
     </div>
     <div class="col-md items">
         <div class="info">
             <div class="img-courser color">
-                <img src="{{ asset('images/laravel-1-logo-black-and-white 1.png') }}" alt="" >
+                <img src="{{ asset('images/laravel-1-logo-black-and-white.png') }}" alt="" >
             </div>
-            <p class="courser-title"><a href="">LARAVEL Tutorial</a></p>
-            <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
-            <button class="btn-courser">Take This Course</button>
+            <div class="info-couser-text">
+                <p class="courser-title"><a href="">LARAVEL Tutorial</a></p>
+                <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                <button class="btn-courser">Take This Course</button>
+            </div>
+            
+            
         </div>
     </div>
     <div class="col-md items">
@@ -65,9 +84,13 @@
             <div class="img-courser">
                 <img src="{{ asset('images/Rectangle 15.png') }}" alt="">
             </div>
-            <p class="courser-title"><a href="">PHP Tutorial</a></p>
-            <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
-            <button class="btn-courser">Take This Course</button>
+            <div class="info-couser-text">
+                <p class="courser-title"><a href="">PHP Tutorial</a></p>
+                <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                <button class="btn-courser">Take This Course</button>
+            </div>
+            
+            
         </div>
   </div>
     </div>
@@ -82,33 +105,178 @@
             <div class="img-courser blue">
                 <img src="{{ asset('images/Rectangle 7.png') }}" alt="" >
             </div>
-            <p class="courser-title"><a href="">CSS Tutorial</a></p>
-            <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
-            <button class="btn-courser">Take This Course</button>
-        </div>
-    </div>
-    <div class="col-md items">
-        <div class="info">
-            <div class="img-courser color">
-                <img src="{{ asset('images/laravel-1-logo-black-and-white 1.png') }}" alt="" >
+            <div class="info-couser-text">
+                <p class="courser-title"><a href="">CSS Tutorial</a></p>
+                <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
+                <button class="btn-courser">Take This Course</button>
             </div>
-            <p class="courser-title"><a href="">Ruby on rails Tutorial</a></p>
-            <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
-            <button class="btn-courser">Take This Course</button>
+            
+            
         </div>
     </div>
     <div class="col-md items">
     <div class="info">
-            <div class="img-courser dark-blue">
-                <img src="{{ asset('images/Rectangle 15.png') }}" alt="">
+            <div class="img-courser color">
+                <img src="{{ asset('images/laravel-1-logo-black-and-white.png') }}" alt="" >
             </div>
-            <p class="courser-title"><a href="">Java Tutorial</a></p>
-            <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
-            <button class="btn-courser">Take This Course</button>
+            <div class="info-couser-text">
+                <p class="courser-title"><a href="">Ruby on rails Tutorial</a></p>
+                <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
+                <button class="btn-courser">Take This Course</button>
+            </div>
+            
+            
+    </div>
+    </div>
+    <div class="col-md items">
+    <div class="info">
+        <div class="img-courser dark-blue">
+                <img src="{{ asset('images/Rectangle 15.png') }}" alt="">
         </div>
+        <div class="info-couser-text">
+                <p class="courser-title"><a href="">Java Tutorial</a></p>
+                <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
+                <button class="btn-courser">Take This Course</button>       
+            </div>
+        
+        
+    </div>
   </div>
     </div>
 </section>
 <h2><a href="">View All Our Courses <i class="fas fa-arrow-right"></i></a></h2>
 
+<section class="why-hapo">
+    <div class="container">
+        <div class="why-hapo">
+                <div class="col-sm-6">
+                    <div class="info-hapo">
+                        <p class="tittle-why">Why HapoLearn?</p> 
+                        <p class="text-why"><i class="fas fa-check-circle"></i>Interactive lessons, "on-the-go" practice, peer support.</p>
+                        <p class="text-why"><i class="fas fa-check-circle"></i>Interactive lessons, "on-the-go" practice, peer support.</p>
+                        <p class="text-why"><i class="fas fa-check-circle"></i>Interactive lessons, "on-the-go" practice, peer support.</p>
+                        <p class="text-why"><i class="fas fa-check-circle"></i>Interactive lessons, "on-the-go" practice, peer support.</p>
+                        <p class="text-why"><i class="fas fa-check-circle"></i>Interactive lessons, "on-the-go" practice, peer support.</p>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <img src="{{ asset('images/transparent-1911160_1280.png') }}" alt="" class="img-hapo">
+                </div>
+        </div>
+    </div>
+</section>
+
+<section class="feedback">
+    <h1>FeedBack</h1>
+    <div class="line line-feed"></div>
+    <p class="feed-title">What other students turned professionals have to say about us<br>after learning with us and reaching their goals</p>
+    <div class="container">
+        <div class="slider">
+            <div class="slider-item">
+                <div class="slider-message">
+                    “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
+                </div>
+                <div class="slider-user">
+                    <img src="{{ asset('images/ellipse 1.png') }}" alt="" class="user-avatar">
+                    <div class="user-info">
+                        <div class="user-name">Hoang Anh Nguyen</div>
+                        <div class="user-language">PHP</div>
+                        <div class="user-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item">
+                <div class="slider-message">
+                    “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
+                </div>
+                <div class="slider-user">
+                    <img src="{{ asset('images/ellipse 1.png') }}" alt="" class="user-avatar">
+                    <div class="user-info">
+                        <div class="user-name">Hoang Anh Nguyen</div>
+                        <div class="user-language">PHP</div>
+                        <div class="user-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item">
+                <div class="slider-message">
+                    “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
+                </div>
+                <div class="slider-user">
+                    <img src="{{ asset('images/ellipse 1.png') }}" alt="" class="user-avatar">
+                    <div class="user-info">
+                        <div class="user-name">Hoang Anh Nguyen</div>
+                        <div class="user-language">PHP</div>
+                        <div class="user-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item">
+                <div class="slider-message">
+                    “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
+                </div>
+                <div class="slider-user">
+                    <img src="{{ asset('images/ellipse 1.png') }}" alt="" class="user-avatar">
+                    <div class="user-info">
+                        <div class="user-name">Hoang Anh Nguyen</div>
+                        <div class="user-language">PHP</div>
+                        <div class="user-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="member">
+    <div class="container">
+        <div class="member-info">
+            <p class="member-text">Become a member of our <br>growing community!</p>
+            <button class="btn-member">Start Learning Now!</button> 
+        </div>
+    </div>
+</section>
+<section class="statistic">
+    <h1>Statistic</h1>
+    <div class="line line-sta"></div>
+    <div class="container sta">
+    <div class="row">
+        <div class="col-sm">
+        <p class="sta-title">Courses</p>
+        <p class="sta-number">1,586</p>
+        </div>
+        <div class="col-sm">
+        <p class="sta-title">Lessons</p>
+        <p class="sta-number">2,689</p>
+        </div>
+        <div class="col-sm">
+        <p class="sta-title">Learners</p>
+        <p class="sta-number">16,882</p>
+        </div>
+    </div>
+    </div>
+</section>
 @endsection

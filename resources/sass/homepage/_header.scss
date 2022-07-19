@@ -27,14 +27,16 @@
     height: 50px;
   }
 }
-//mobile
+
 @media (max-width: 736px){
   .navbar-nav {
     display: initial;
   }
+  
   .navbar-toggler {
     display: flex;
   }
+
   .logo-image {
     width: 150px;
     height: 26.75px;
