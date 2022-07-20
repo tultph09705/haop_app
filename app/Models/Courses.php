@@ -20,17 +20,17 @@ class Courses extends Model
 
     public function lessons()
     {
-        return $this->hasMany(lesson::class);
+        return $this->hasMany(Lesson::class);
     }
 
     public function reviews()
     {
-        return $this->hasMany(review::class);
+        return $this->hasMany(Review::class);
     }
 
     public function users()
     {
-        return $this->belongsToMany(user::class);
+        return $this->belongsToMany(User::class);
     }
 
     public function teachers()
