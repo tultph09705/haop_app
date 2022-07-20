@@ -16,7 +16,7 @@ class CreateUserLessonTable extends Migration
         Schema::create('user_lesson', function (Blueprint $table) {
             $table->integer('user_id');
             $table->integer('lesson_id');
-            $table->date('register_date');
+            $table->date('register_date')->nullable();
             $table->timestamps();
             $table->softDeletes();
             $table->primary('user_id', 'lesson_id');

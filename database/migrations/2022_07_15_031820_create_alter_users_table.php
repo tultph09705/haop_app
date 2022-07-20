@@ -46,4 +46,3 @@ class CreateAlterUsersTable extends Migration
         });
     }
 }
-    
