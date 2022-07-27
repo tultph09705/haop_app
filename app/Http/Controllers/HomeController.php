@@ -14,5 +14,12 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
+
+        $course = Course::find(10);
+        dd($course->lessons(), $course->lessons);
+        foreach ($course->lesson as $lesson) {
+            dd($lesson);
+        }
+        $review = Review::find(10);
     }
 }

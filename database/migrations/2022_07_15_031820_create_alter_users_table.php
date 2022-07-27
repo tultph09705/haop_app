@@ -13,7 +13,7 @@ class CreateAlterUsersTable extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
+        Schema::table('user', function (Blueprint $table) {
             $table->string('username')->nullable();
             $table->string('image')->nullable();
             $table->date('birthday')->nullable();
@@ -33,7 +33,7 @@ class CreateAlterUsersTable extends Migration
      */
     public function down()
     {
-        Schema::table('users', function (Blueprint $table) {
+        Schema::table('user', function (Blueprint $table) {
             $table->dropColumn('username');
             $table->dropColumn('image');
             $table->dropColumn('birthday');
