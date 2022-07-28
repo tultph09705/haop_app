@@ -8,5 +8,5 @@ return [
     'max' => [
         'string' => 'The :attribute must not be greater than :max characters',
     ],
-    'data_error' => 'Wrong account username or password. Please check again',
+    'error' => 'Wrong account username or password. Please check again',
 ];
