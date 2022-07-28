@@ -103,6 +103,12 @@
   margin-top: 18px;
 }
 
-.btn-register {
+.btn-register a {
   padding: 13px 115px;
+  color: white;
+}
+
+.btn-register a:hover {
+  color: black;
+  text-decoration: none;
 }

@@ -5,7 +5,7 @@
     <div class="row justify-content-center login-location">
         <div class="col-md-6">
             <div class="card">
-                <div class="card-header login-title">{{ __('Sign in to HapoLearn') }}</div>
+                <div class="card-header login-title">{{ __('message.sign_in_title') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
@@ -42,12 +42,12 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-12 login-submit">
                                 <button type="submit" class="btn btn-submit">
-                                    {{ __('Login') }}
+                                    {{ __('message.sign_in') }}
                                 </button>
 
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
+                                        {{ __('message.forgot_password') }}
                                     </a>
                                 @endif
                             </div>
@@ -75,9 +75,13 @@
                         </div>
 
                         <div class="from-group row mt-5 justify-content-center">
+                            
                             <button type="submit" class="btn btn-register">
-                                {{ __('Create New Account') }}
+                            <a href="{{ route('register') }}">
+                                {{ __('message.create_new_account') }}
+                            </a>
                             </button>
+                            
                         </div>
                     </form>
                 </div>

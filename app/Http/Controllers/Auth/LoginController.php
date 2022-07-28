@@ -42,19 +42,22 @@ class LoginController extends Controller
     
     public function login(LoginRequest $request)
     {
-        $fieldType = filter_var($request->username, FILTER_VALIDATE_EMAIL) ? 'email' : 'username';
 
         $data = [
-            'username' => $request['username'],
+            'name' => $request['username'],
             'password' => $request['password'],
         ];
 
         $fieldType = filter_var($request->name, FILTER_VALIDATE_EMAIL) ? 'email' : 'name';
 
         if (auth()->attempt(array($fieldType => $data['name'], 'password' => $data['password']))) {
-            return redirect('/test');
+            return redirect('/home');
         }
 
-        return redirect('/login')->with('error', __('message.data_error'));
+        if (Auth::attempt($data)) {
+            return redirect('/');
+        }
+
+        return redirect('/')->with('error', __('message.error'));
     }
 }
