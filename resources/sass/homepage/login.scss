@@ -21,11 +21,11 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
-  color: #505353;
+  color: $black-hapo;
 }
 
 .login-input {
-  border: 1px solid #505353;
+  border: 1px solid $black-hapo;;
   width: 216%;
 }
 
@@ -61,7 +61,7 @@
 
 .sign-with {
   position: relative;
-  border-bottom: 1px solid #cecece;
+  border-bottom: 1px solid $white-hapo;
   margin-top: 58px;
 }
 
@@ -76,7 +76,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
-  color: #505353;
+  color: $bla$red-hapo;
 }
 
 .account-google {
@@ -86,12 +86,12 @@
   font-size: 20px;
   line-height: 23px;
   background: white;
-  border: 1px solid #DC4E41;
+  border: 1px solid $red-hapo;
   border-radius: 22px;
   padding: 13px 150px;
 
   a {
-    color: #DC4E41;
+    color: $red-hapo;
   }
 }
 

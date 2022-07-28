@@ -8,6 +8,10 @@ class TestController extends Controller
 {
     public function index()
     {
-       return view('test');
+        if (Auth::check()) {
+            return view('test');
+        }
+       
+        return view('test');
     }
 }
