@@ -1,0 +1,40 @@
+.register-location {
+  margin-top: 195px;
+  font-family: $main-font;
+  width: 115%;
+}
+
+.card {
+  transform: translateX(-41px);
+}
+.card-header {
+  border: none;
+  text-align: center;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 34px;
+  background-color: white;
+  margin-top: 16px;
+  color: $main-color;
+}
+
+.register-label{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: $black-hapo;
+}
+
+.register-input {
+  border: 1px solid $black-hapo;
+}
+
+.btn-register {
+  background-color: $main-color;
+  color: white;
+  padding: 11px 65px;
+  border-radius: 22px;
+  text-align: center;
+}
