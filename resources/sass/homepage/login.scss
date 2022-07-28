@@ -1,0 +1,114 @@
+.login-location {
+  margin: 95px 0;
+  font-family: $main-font;
+  transform: translateY(-5%) !important;
+}
+
+.login-title {
+  border: none;
+  text-align: center;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 34px;
+  background-color: white;
+  margin-top: 16px;
+  color: $main-color;
+}
+
+.login-label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: $black-hapo;
+}
+
+.login-input {
+  border: 1px solid $black-hapo;;
+  width: 216%;
+}
+
+.btn-submit,
+.btn-register {
+  background-color: $main-color;
+  color: white;
+  padding: 8px 60px;
+  border-radius: 22px;
+}
+
+.forgot-password {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-decoration-line: underline;
+  float: right;
+}
+
+.login-submit {
+  margin-top: 30px;
+  margin-left: 15px;
+  font-family: $main-font;
+}
+
+.btn-link {
+  margin-bottom: 20px;
+  margin-left: 111px;
+  color: $main-color;
+}
+
+.sign-with {
+  position: relative;
+  border-bottom: 1px solid $white-hapo;
+  margin-top: 58px;
+}
+
+.title-google {
+  font-family: $main-font;
+  position: absolute;
+  top: -17px;
+  background: white;
+  padding: 0 21px;
+  left: 35%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: $red-hapo;
+}
+
+.account-google {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  background: white;
+  border: 1px solid $red-hapo;
+  border-radius: 22px;
+  padding: 13px 150px;
+
+  a {
+    color: $red-hapo;
+  }
+}
+
+.title-register {
+  left: 25%;
+}
+
+.model-register {
+  margin-top: 18px;
+}
+
+.btn-register a {
+  padding: 13px 115px;
+  color: white;
+}
+
+.btn-register a:hover {
+  color: black;
+  text-decoration: none;
+}

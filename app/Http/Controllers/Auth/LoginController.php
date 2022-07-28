@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use App\Http\Requests\LoginRequest;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -36,5 +38,26 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+    }
+    
+    public function login(LoginRequest $request)
+    {
+
+        $data = [
+            'name' => $request['username'],
+            'password' => $request['password'],
+        ];
+
+        $fieldType = filter_var($request->name, FILTER_VALIDATE_EMAIL) ? 'email' : 'name';
+
+        if (auth()->attempt(array($fieldType => $data['name'], 'password' => $data['password']))) {
+            return redirect('/home');
+        }
+
+        if (Auth::attempt($data)) {
+            return redirect('/');
+        }
+
+        return redirect('/')->with('error', __('message.error'));
     }
 }
