@@ -17,7 +17,7 @@ return [
     'space' => 'There must be no spaces',
     'register_error' => 'Register error',
     'sign_in_title' => 'Sign in to HapoLearn',
-    'user' => 'Username',
+    'username' => 'Username',
     'password' => 'Password',
     'sign_in' => 'Sign in',
     'forgot_password' => 'Forgot Your Password?',

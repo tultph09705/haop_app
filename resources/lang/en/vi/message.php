@@ -17,7 +17,7 @@ return [
     'space' => 'Không được có khoảng trắng',
     'register_error' => 'Đăng ký lỗi',
     'sign_in_title' => 'Đăng nhập vào HapoLearn',
-    'user' => 'Tên tài khoản',
+    'username' => 'Tên tài khoản',
     'password' => 'Mật khẩu',
     'sign_in' => 'Đăng nhập',
     'forgot_password' => 'Quên mật khẩu?',
