@@ -14,7 +14,7 @@ class Reviews extends Model
         'message',
         'time',
         'rate',
-        'course_id',
+        'user_id',
         'course_id',
         'parent_id'
     ];
@@ -28,5 +28,9 @@ class Reviews extends Model
     {
         return $this->belongsTo(User::class);
     }
-}
 
+    public function scopeMain($query)
+    {
+        return $query->orderBy('parent_id', config('home.high_to_low'))->limit(config('reviews.review_number_home'));
+    }
+}

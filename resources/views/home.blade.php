@@ -49,22 +49,22 @@
 </section>
 <section class="layout"></section>
 <section class="Courser">
+    @foreach($courses as $course)
     <div class="container">
     <div class="row">
     <div class="col-md items">
         <div class="info">
             <div class="img-courser">
-                <img src="{{ asset('images/Rectangle 7.png') }}" alt="" >
+                <img src="{{ $course->image }}" alt="" >
             </div>
             <div class="info-couser-text">
-                <p class="courser-title"><a href="">HTML/CSS/JS Tutorial</a></p>
-                <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                <p class="courser-title"><a href="">{{$course->name }}</a></p>
+                <p class="courser-text">{{Str::limit($course->description, 60)}}</p>
                 <button class="btn-courser">Take This Course</button>
             </div>
-            
-            
         </div>
     </div>
+<!--     
     <div class="col-md items">
         <div class="info">
             <div class="img-courser color">
@@ -75,12 +75,11 @@
                 <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
                 <button class="btn-courser">Take This Course</button>
             </div>
-            
-            
         </div>
     </div>
+
     <div class="col-md items">
-    <div class="info">
+        <div class="info">
             <div class="img-courser">
                 <img src="{{ asset('images/Rectangle 15.png') }}" alt="">
             </div>
@@ -89,32 +88,31 @@
                 <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
                 <button class="btn-courser">Take This Course</button>
             </div>
-            
-            
         </div>
-  </div>
+    </div> -->
     </div>
+    </div>
+    @endforeach
 </section>
 <h1>Other Courser</h1>
 <div class="line"></div>
 <section class="Other-Courser">
+    @foreach($courses as $course)
     <div class="container">
     <div class="row">
     <div class="col-md items">
         <div class="info">
             <div class="img-courser blue">
-                <img src="{{ asset('images/Rectangle 7.png') }}" alt="" >
+                <img src="{{$course->image}}" alt="" >
             </div>
             <div class="info-couser-text">
-                <p class="courser-title"><a href="">CSS Tutorial</a></p>
-                <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
+                <p class="courser-title"><a href="">{{$course->name}}</a></p>
+                <p class="courser-text">{{Str::limit($course->description, 60)}}</p>
                 <button class="btn-courser">Take This Course</button>
             </div>
-            
-            
         </div>
     </div>
-    <div class="col-md items">
+    <!-- <div class="col-md items">
     <div class="info">
             <div class="img-courser color">
                 <img src="{{ asset('images/laravel-1-logo-black-and-white.png') }}" alt="" >
@@ -137,12 +135,12 @@
                 <p class="courser-title"><a href="">Java Tutorial</a></p>
                 <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
                 <button class="btn-courser">Take This Course</button>       
-            </div>
-        
-        
+        </div>
     </div>
-  </div>
+    </div> -->
     </div>
+    </div>
+    @endforeach
 </section>
 <h2><a href="">View All Our Courses <i class="fas fa-arrow-right"></i></a></h2>
 
@@ -172,6 +170,7 @@
     <p class="feed-title">What other students turned professionals have to say about us<br>after learning with us and reaching their goals</p>
     <div class="container">
         <div class="slider">
+        @foreach($reviews as $review)
             <div class="slider-item">
                 <div class="slider-message">
                     “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
@@ -193,21 +192,23 @@
             </div>
             <div class="slider-item">
                 <div class="slider-message">
-                    “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
+                    {{ $review->message }}
                 </div>
                 <div class="slider-user">
                     <img src="{{ asset('images/ellipse 1.png') }}" alt="" class="user-avatar">
                     <div class="user-info">
-                        <div class="user-name">Hoang Anh Nguyen</div>
-                        <div class="user-language">PHP</div>
+                        <div class="user-name">{{ $review->user->name }}</div>
+                        <div class="user-language">{{$review->course->name}}</div>
                         <div class="user-stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                        @php
+                            $stars = $review['rate'];
+                        @endphp
+                        @for($i = 0; $i < $stars ; $i++) 
                             <i class="far fa-star"></i>
+                        @endfor
                         </div>
                     </div>
+                    @endforeach
                 </div>
             </div>
             <div class="slider-item">
@@ -266,15 +267,15 @@
     <div class="row">
         <div class="col-sm">
         <p class="sta-title">Courses</p>
-        <p class="sta-number">1,586</p>
+        <p class="sta-number">{{ $countCourses }}</p>
         </div>
         <div class="col-sm">
         <p class="sta-title">Lessons</p>
-        <p class="sta-number">2,689</p>
+        <p class="sta-number">{{ $countLessons }}</p>
         </div>
         <div class="col-sm">
         <p class="sta-title">Learners</p>
-        <p class="sta-number">16,882</p>
+        <p class="sta-number">{{ $learners}}</p>
         </div>
     </div>
     </div>
