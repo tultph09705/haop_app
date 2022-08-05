@@ -48,100 +48,44 @@
         <button class="btn-start">Start Learning Now!</button>
 </section>
 <section class="layout"></section>
-<section class="Courser">
-    @foreach($courses as $course)
-    <div class="container">
-    <div class="row">
-    <div class="col-md items">
-        <div class="info">
-            <div class="img-courser">
-                <img src="{{ $course->image }}" alt="" >
+<section class="course container">
+        <div class="card-container container row">
+            @foreach($courses as $course)
+            <div class="col-lg-4 col-md-12">
+                <div class="card-main card">
+                    <div class="card-image card-left">
+                        <img src="{{ $course->image }}" class="card-img-top" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p class="courser-title">{{ $course->name }}</p>
+                        <p class="courser-text">{{ Str::limit($course->description, 60) }}</p>
+                        <button class="btn-courser">Take This Course</button>
+                    </div>
+                </div>
             </div>
-            <div class="info-couser-text">
-                <p class="courser-title"><a href="">{{$course->name }}</a></p>
-                <p class="courser-text">{{Str::limit($course->description, 60)}}</p>
-                <button class="btn-courser">Take This Course</button>
-            </div>
+            @endforeach
         </div>
-    </div>
-<!--     
-    <div class="col-md items">
-        <div class="info">
-            <div class="img-courser color">
-                <img src="{{ asset('images/laravel-1-logo-black-and-white.png') }}" alt="" >
-            </div>
-            <div class="info-couser-text">
-                <p class="courser-title"><a href="">LARAVEL Tutorial</a></p>
-                <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
-                <button class="btn-courser">Take This Course</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md items">
-        <div class="info">
-            <div class="img-courser">
-                <img src="{{ asset('images/Rectangle 15.png') }}" alt="">
-            </div>
-            <div class="info-couser-text">
-                <p class="courser-title"><a href="">PHP Tutorial</a></p>
-                <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
-                <button class="btn-courser">Take This Course</button>
-            </div>
-        </div>
-    </div> -->
-    </div>
-    </div>
-    @endforeach
 </section>
 <h1>Other Courser</h1>
 <div class="line"></div>
-<section class="Other-Courser">
-    @foreach($courses as $course)
-    <div class="container">
-    <div class="row">
-    <div class="col-md items">
-        <div class="info">
-            <div class="img-courser blue">
-                <img src="{{$course->image}}" alt="" >
-            </div>
-            <div class="info-couser-text">
-                <p class="courser-title"><a href="">{{$course->name}}</a></p>
-                <p class="courser-text">{{Str::limit($course->description, 60)}}</p>
-                <button class="btn-courser">Take This Course</button>
-            </div>
+<section class="course-other container">
+        <div class="card-container container row">
+            @foreach($courses as $course)
+                <div class="col-md-4">
+                    <div class="card-main card">
+                        <div class="card-image card-left">
+                            <img src="{{ $course->image }}" class="card-img-top" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="courser-title">{{ $course->name }}</p>
+                            <p class="courser-text">{{ Str::limit($course->description, 60) }}</p>
+                            <button class="btn-courser">Take This Course</button>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
         </div>
-    </div>
-    <!-- <div class="col-md items">
-    <div class="info">
-            <div class="img-courser color">
-                <img src="{{ asset('images/laravel-1-logo-black-and-white.png') }}" alt="" >
-            </div>
-            <div class="info-couser-text">
-                <p class="courser-title"><a href="">Ruby on rails Tutorial</a></p>
-                <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
-                <button class="btn-courser">Take This Course</button>
-            </div>
-            
-            
-    </div>
-    </div>
-    <div class="col-md items">
-    <div class="info">
-        <div class="img-courser dark-blue">
-                <img src="{{ asset('images/Rectangle 15.png') }}" alt="">
-        </div>
-        <div class="info-couser-text">
-                <p class="courser-title"><a href="">Java Tutorial</a></p>
-                <p class="courser-text">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
-                <button class="btn-courser">Take This Course</button>       
-        </div>
-    </div>
-    </div> -->
-    </div>
-    </div>
-    @endforeach
-</section>
+    </section>
 <h2><a href="">View All Our Courses <i class="fas fa-arrow-right"></i></a></h2>
 
 <section class="why-hapo">
