@@ -4,18 +4,17 @@
   transform: translateY(-25%) !important;
 }
 
-.info {
+.card {
   border: 1px solid #cccc;
   border-radius: 30px;
   text-align: center;
   padding-bottom: 50px;
   box-shadow: 0px 0px 10px
     rgba(0, 0, 0, 0.25);
+  transform: translateX(40px) !important;
 }
 
-.img-courser {
-  padding: 35px;
-  background-color: #3F6185;
+.card-image img{
   border-radius: 30px;
 }
 
@@ -30,11 +29,11 @@
   font-family: $main-font;
 }
 
-.courser-title a {
+.courser-title {
   color: $main-color;
 }
 
-.courser-title a:hover {
+.courser-title:hover {
   text-decoration: none;
   color: #3F6185;
 }
@@ -65,7 +64,7 @@ h1 {
   font-family: $main-font;
 }
 
-.Other-Courser {
+.course-other {
   padding-top: 275px;
 }
 
@@ -106,7 +105,7 @@ h2 a:hover {
       margin-top: -275px;
     }
 
-    .Courser {
+    .course {
       padding-top: 106px;
     }
 
@@ -117,7 +116,7 @@ h2 a:hover {
       padding-bottom: 165px;
     }
 
-    .info {
+    .course {
       display: flex;
       padding-bottom: 0px;
       background-color: #fff;
@@ -128,6 +127,5 @@ h2 a:hover {
     .courser-text {
       width: 100%;
       text-align: left;
-      
     }
 }

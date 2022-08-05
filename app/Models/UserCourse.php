@@ -18,4 +18,9 @@ class UserCourse extends Model
         'register_course_time'
     ];
 
+    public function scopeLearner($query)
+    {
+        return $query->select('user_id')->groupBy('user_id');
+    }
+
 }
