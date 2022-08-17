@@ -31,6 +31,6 @@ class Reviews extends Model
 
     public function scopeMain($query)
     {
-        return $query->orderBy('parent_id', config('home.high_to_low'))->limit(config('reviews.review_number_home'));
+        return $query->orderBy('parent_id', config('home.sort_high_to_low'))->limit(config('reviews.review_number_home'));
     }
 }
