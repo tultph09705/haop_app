@@ -6,7 +6,7 @@ use App\Models\Courses;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class UserCourseFactory extends Factory
+class CourseTeacherFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -16,8 +16,8 @@ class UserCourseFactory extends Factory
     public function definition()
     {
         return [
-            "user_id" => $this->faker->randomElement(User::where('role', config('roles.user'))->pluck('id')),
-            "course_id" => $this->faker->randomElement(Courses::pluck('id'))
+            "user_id" => $this->faker->randomElement(User::where('role', config('roles.teacher'))->pluck('id')),
+            "course_id" => $this->faker->randomElement(Courses::pluck('id')),
         ];
     }
 }
